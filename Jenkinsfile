@@ -47,8 +47,8 @@ pipeline {
       steps {
         sh mvn """mvn sonar:sonar \
   -Dsonar.projectKey=test \
-  -Dsonar.host.url=http://44.202.182.225:9000 \
-  -Dsonar.login=29f61700c86dc5faf485316d6e765f84512e7334"""
+  -Dsonar.host.url=http://44.200.26.159:9000 \
+  -Dsonar.login=a59fdf4ca3f7e7d290ccc1b0e5823bb1a96502bc"""
       }
     }
     stage('Upload to Artifactory') {
